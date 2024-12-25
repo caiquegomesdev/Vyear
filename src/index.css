@@ -1,0 +1,47 @@
+/* src/index.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+   */
+
+
+
+   /* Estilo para o body */
+body {
+  font-family: 'Roboto', Arial, sans-serif;  /* Fonte mais moderna */
+  margin: 0;
+  padding: 0;
+  background-color: #121212;  /* Fundo escuro mais suave */
+  color: #fff;  /* Texto branco para contraste */
+  line-height: 1.6;
+  font-size: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(45deg, #121212, #2a2a2a); /* Gradiente suave para o fundo */
+}
+
+/* Adicionando um leve sombreado e espaçamento ao redor da página */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);  /* Camada de sombra para dar profundidade */
+  pointer-events: none;
+}
+
+/* Ajuste de layout para elementos dentro da página */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 20px;
+}

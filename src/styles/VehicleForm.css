@@ -1,0 +1,94 @@
+/* .vehicle-form {
+    margin: 20px;
+  }
+  
+  .vehicle-form input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+  
+  .vehicle-form button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+   */
+
+
+
+
+   /* Estilo geral do formulário */
+.vehicle-form {
+  margin: 30px auto;
+  max-width: 400px;
+  padding: 20px;
+  background: #1e1e1e;  /* Fundo escuro para o formulário */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para os inputs */
+.vehicle-form input {
+  padding: 12px;
+  width: 100%;
+  margin-bottom: 15px;  /* Espaçamento entre os campos */
+  font-size: 1.1rem;
+  border: 2px solid #333;
+  border-radius: 25px;
+  background-color: #282828;  /* Fundo do input mais suave */
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Foco no input com efeito */
+.vehicle-form input:focus {
+  border-color: #4CAF50;
+  background-color: #333;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+  outline: none;
+}
+
+/* Estilo para os botões */
+.vehicle-form button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  width: 100%;  /* Botão ocupa toda a largura disponível */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito de hover no botão */
+.vehicle-form button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+/* Efeito de botão desabilitado */
+.vehicle-form button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+/* Pequeno ajuste de responsividade */
+@media (max-width: 480px) {
+  .vehicle-form {
+    padding: 15px;
+  }
+
+  .vehicle-form input,
+  .vehicle-form button {
+    width: 100%;
+  }
+}

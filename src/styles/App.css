@@ -1,0 +1,113 @@
+/* .app {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    border-radius: 20px;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  }
+   */
+
+
+
+
+/* Alterando o fundo da página para preto */
+.app {
+  font-family: 'Roboto', Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  background: #121212;  /* Fundo preto */
+  color: #fff;  /* Cor de texto branca para contraste */
+}
+
+/* Estilo para o header */
+header {
+  background-color: #333;  /* Cor de fundo escura para o cabeçalho */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Título com sombra e espaçamento */
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Botões com gradiente e transição */
+button {
+  background: linear-gradient(145deg, #4CAF50, #45a049);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+button:hover {
+  background: linear-gradient(145deg, #45a049, #4CAF50);
+  transform: translateY(-2px);
+}
+
+/* Desabilitado: cor suave e sombra */
+button:disabled {
+  background-color: #555;
+  color: #888;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Estilo de erro, com ícone e maior destaque */
+.error {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error::before {
+  content: "❌";  /* Ícone de erro */
+  margin-right: 8px;
+  font-size: 1.5rem;
+}
+
+/* Adicionando um pouco de espaçamento entre os elementos */
+.app > * {
+  margin-bottom: 20px;
+}
